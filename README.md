@@ -40,9 +40,36 @@
 
 **📝 Respuesta:**
 
-<!-- Escribe aquí tu respuesta a la Pregunta 1 -->
+## Diferencia entre git clone, fork y git pull
+
+**git clone** es un comando de Git que permite copiar un repositorio remoto a una computadora local. Al ejecutarlo, se descarga el proyecto junto con su historial de versiones, lo que permite trabajar localmente en él.
+
+**fork** es una función de GitHub que crea una copia de un repositorio en la cuenta personal del usuario. Se utiliza para trabajar sobre una copia propia sin modificar directamente el repositorio original.
+
+**git pull** es un comando de Git que permite actualizar el repositorio local trayendo los cambios más recientes desde el repositorio remoto. En términos generales, combina la obtención de cambios y su integración en la rama actual.
+
+## Desarrollo de la parte práctica realizada
+
+### ¿Cómo se realizó el fork?
+Primero se ingresó al repositorio original en GitHub. Luego se hizo clic en el botón **Fork**, ubicado en la parte superior derecha de la página. Después, se seleccionó la cuenta personal de GitHub para crear una copia del repositorio en dicha cuenta.
+
+![Captura del fork](images/fork.png)
 
 ---
+
+### ¿Cómo se realizó el clone del fork?
+Una vez creado el fork, se ingresó al repositorio copiado en la cuenta personal. Luego se presionó el botón **Code**, se copió la URL HTTPS del fork y se ejecutó el siguiente comando en Git Bash:
+
+![Captura del clone](images/clone.png)
+
+### ¿Cómo se verificó que se estaba trabajando sobre el fork y no sobre el repositorio original?
+
+Para verificar que se estaba trabajando sobre el fork y no sobre el repositorio original, se utilizó el comando:
+
+![Captura del clone](images/remote.png)
+
+
+Este comando permite visualizar las direcciones URL del repositorio remoto configurado como origin. Al ejecutarlo, se comprobó que la URL correspondía a la cuenta personal del estudiante en GitHub, lo cual confirma que el repositorio utilizado es el fork y no el repositorio original.
 
 ## Pregunta 2 (1 punto)
 
