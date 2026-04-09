@@ -177,6 +177,8 @@ Una de sus principales ventajas es que permite trabajar en nuevas funcionalidade
 
 En contextos colaborativos, Git Flow resulta especialmente útil porque varios integrantes del equipo pueden desarrollar funcionalidades, corregir errores o preparar versiones al mismo tiempo sin interferir con el trabajo de los demás. Además, en proyectos de larga duración, aporta una estructura clara y organizada que hace más fácil el mantenimiento, la escalabilidad y el seguimiento de los cambios realizados.
 
+![Captura del clone](images/Evidencia.png)
+![Captura del clone](images/Evidencia2.png)
 
 ## Pregunta 4 (2 puntos)
 
