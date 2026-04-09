@@ -129,9 +129,54 @@ En esta práctica se configuró el archivo `.gitignore` para ignorar:
 
 **📝 Respuesta:**
 
-<!-- Escribe aquí tu respuesta completa a la Pregunta 3 -->
+## Comandos exactos utilizados
 
----
+Durante el desarrollo de esta pregunta se utilizaron los siguientes comandos desde la inicialización de Git Flow hasta el cierre de la rama:
+
+git status
+git flow init
+git branch
+git flow feature start ingresar-encabezado
+git branch
+git add README.md
+git commit -m "Completar encabezado del README"
+git add README.md
+git commit -m "Documentar proceso de Git Flow en README"
+git flow feature finish ingresar-encabezado
+git branch
+git push origin develop
+
+### Descripción del proceso seguido
+
+Primero se verificó el estado del repositorio con el comando git status, con el fin de comprobar que no existieran cambios pendientes antes de iniciar el flujo de trabajo.
+
+Luego se ejecutó git flow init para inicializar Git Flow en el repositorio. Durante este proceso se configuraron las ramas principales main y develop, además de los prefijos por defecto para ramas de tipo feature, release y hotfix.
+
+Después, se creó una rama de tipo feature llamada ingresar-encabezado mediante el comando git flow feature start ingresar-encabezado. Esta rama se generó a partir de develop y fue utilizada para trabajar de forma aislada en la nueva funcionalidad solicitada.
+
+Dentro de la rama feature/ingresar-encabezado, se completó el encabezado del archivo README.md con los datos personales del estudiante. Una vez realizado este cambio, se preparó el archivo con git add README.md y se registró un commit para dejar constancia del avance.
+
+Posteriormente, en la misma rama se añadió la documentación correspondiente a esta pregunta dentro del README.md, incluyendo los comandos empleados, la explicación del proceso seguido y la reflexión sobre Git Flow. Después de ello, se realizó un segundo commit para guardar formalmente esta parte del trabajo.
+
+Finalmente, se ejecutó git flow feature finish ingresar-encabezado, lo cual permitió cerrar la rama feature e integrar sus cambios en la rama develop, respetando así el flujo de trabajo establecido por Git Flow. Como paso final, se verificaron las ramas existentes y se subieron los cambios a develop en el repositorio remoto.
+
+### Propósito de cada paso
+git status: verificar que el repositorio estuviera limpio antes de comenzar.
+git flow init: inicializar Git Flow y definir la estructura de ramas del proyecto.
+git flow feature start ingresar-encabezado: crear una rama feature para desarrollar la funcionalidad solicitada sin afectar directamente a main o develop.
+Edición del README.md: completar el encabezado con los datos personales del estudiante.
+git add README.md: preparar el archivo modificado para el commit.
+git commit: registrar cada avance en el historial del repositorio.
+git flow feature finish ingresar-encabezado: cerrar la rama feature e integrar sus cambios en develop.
+git push origin develop: subir al repositorio remoto los cambios ya integrados en la rama de desarrollo.
+### Reflexión sobre las ventajas de aplicar Git Flow
+
+Git Flow es una metodología de trabajo que permite organizar el desarrollo de un proyecto mediante ramas con funciones específicas. Su uso facilita la separación entre el código estable y el código que todavía se encuentra en desarrollo, lo que ayuda a mantener un mejor control del repositorio.
+
+Una de sus principales ventajas es que permite trabajar en nuevas funcionalidades dentro de ramas independientes, evitando modificar directamente la rama principal. Esto reduce riesgos, mejora el orden del proyecto y facilita la integración de cambios de forma controlada.
+
+En contextos colaborativos, Git Flow resulta especialmente útil porque varios integrantes del equipo pueden desarrollar funcionalidades, corregir errores o preparar versiones al mismo tiempo sin interferir con el trabajo de los demás. Además, en proyectos de larga duración, aporta una estructura clara y organizada que hace más fácil el mantenimiento, la escalabilidad y el seguimiento de los cambios realizados.
+
 
 ## Pregunta 4 (2 puntos)
 
