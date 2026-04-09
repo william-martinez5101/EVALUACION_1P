@@ -90,9 +90,28 @@ Este comando permite visualizar las direcciones URL del repositorio remoto confi
 
 **📝 Respuesta:**
 
-<!-- Escribe aquí tu explicación y evidencia para la Pregunta 2 -->
+## Función del archivo `.gitignore`
 
----
+El archivo `.gitignore` se utiliza para indicar a Git qué archivos o carpetas no deben ser rastreados ni incluidos en los commits. Esto resulta útil para excluir archivos temporales, registros, archivos generados automáticamente o documentos que no forman parte del control de versiones.
+
+En esta práctica se configuró el archivo `.gitignore` para ignorar:
+
+- Todos los archivos con extensión `.log`
+- La carpeta `temp/`
+- Todos los archivos `.md` y `.txt` ubicados dentro de la carpeta `doc/`
+
+El contenido utilizado en el archivo fue el siguiente:
+
+```gitignore
+*.log
+temp/
+doc/*.md
+doc/*.txt
+ Evidencia:
+![Captura del clone](images/gitignore.png)
+![Captura del clone](images/gitignorecont.png)
+![Captura del clone](images/archivos.png)
+![Captura del clone](images/archivosExc.png)
 
 ## Pregunta 3 (2 puntos)
 
