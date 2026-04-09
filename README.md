@@ -100,14 +100,6 @@ En esta práctica se configuró el archivo `.gitignore` para ignorar:
 - La carpeta `temp/`
 - Todos los archivos `.md` y `.txt` ubicados dentro de la carpeta `doc/`
 
-El contenido utilizado en el archivo fue el siguiente:
-
-```gitignore
-*.log
-temp/
-doc/*.md
-doc/*.txt
- Evidencia:
 ![Captura del clone](images/gitignore.png)
 ![Captura del clone](images/gitignorecont.png)
 ![Captura del clone](images/archivos.png)
